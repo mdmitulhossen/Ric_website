@@ -9,7 +9,7 @@ const Hero = () => {
         Aos.init()
     }, [])
     return (
-        <div  id='hero' className='hero w-full h-[650px] relative'>
+        <div  id='hero' className='hero w-full h-[500px] md:h-[650px] relative'>
             <div className='w-full h-full bg-black/50'></div>
             <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-center space-y-4'>
                 <p  data-aos="zoom-in-down" data-aos-duration="3000" className='font-medium md:text-4xl text-2xl'>Welcome to the</p>

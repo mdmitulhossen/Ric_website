@@ -20,7 +20,8 @@ const MemberCard = ({name,post,imageNo}) => {
         Aos.init()
       },[])
     return (
-        <div data-aos="zoom-in" data-aos-duration="2000" className='bg-white rounded-xl relative group cursor-pointer'>
+        <div  data-aos="fade-up"
+        data-aos-easing="ease-out-cubic" data-aos-duration="1000" className='bg-white rounded-xl relative group cursor-pointer'>
             <div className='w-full h-[350px]'>
                 <img className='w-full h-full rounded-t-xl object-fill' src={image[imageNo-1]} alt="" />
             </div>

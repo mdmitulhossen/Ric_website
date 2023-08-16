@@ -19,10 +19,10 @@ const CurrentProjects = () => {
                 <div data-aos="fade-left" data-aos-duration="2000" className='col-span-12'>
                 <ProjectsCard/>
                 </div>
-                <div data-aos="fade-left" data-aos-duration="2000" className='col-span-12 md:col-span-6'>
+                <div data-aos="fade-right" data-aos-duration="2000" className='col-span-12 md:col-span-6'>
                 <ProjectsCard/>
                 </div>
-                <div data-aos="fade-right" data-aos-duration="2000" className='col-span-12 md:col-span-6'>
+                <div data-aos="fade-left" data-aos-duration="2000" className='col-span-12 md:col-span-6'>
                 <ProjectsCard/>
                 </div>
         

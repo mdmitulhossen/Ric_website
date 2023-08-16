@@ -23,11 +23,11 @@ const Navbar = () => {
                                     <Link spy={true} smooth={true} offset={-100} duration={500} to="hero">Home</Link>
                                 </li>
                             </a>
-                            
+
                             <li className='hover:text-r1 duration-200 cursor-pointer'>
                                 <Link spy={true} smooth={true} offset={-100} duration={500} to="projects">Projects</Link>
                             </li>
-                            
+
                             <li className='hover:text-r1 duration-200 cursor-pointer'>
                                 <Link spy={true} smooth={true} offset={-100} duration={500} to="event">Event</Link>
                             </li>
@@ -63,15 +63,24 @@ const Navbar = () => {
 
                 {/* Mobile view */}
 
-                <div className={`p-5 absolute w-full bg-[#00233F] transition-all duration-500 left-0 ${open ? 'top-[50px]' : "top-[-999px]"}`}>
+                <div className={`p-5 absolute w-full bg-[#00233F] transition-all lg:hidden duration-500 left-0 ${open ? 'top-[50px]' : "top-[-999px]"}`}>
                     <ul className='flex flex-col w-full justify-center items-center gap-5 text-lg font-medium text-white'>
                         <a href="/"><li className='hover:text-r1 duration-200'>
-                            <Link spy={true} smooth={true} offset={-100} duration={500} to="hero">Home</Link>
+                            <Link onClick={()=>setOpen(false)} spy={true} smooth={true} offset={-100} duration={500} to="hero">Home</Link>
                         </li></a>
-                        <a href="/"><li className='hover:text-r1 duration-200'>Projects</li></a>
-                        <a href="/"><li className='hover:text-r1 duration-200'>Event</li></a>
-                        <a href="/"><li className='hover:text-r1 duration-200'>About</li></a>
-                        <a href="/"><li className='hover:text-r1 duration-200'>Contact</li></a>
+                        <a href="/"><li className='hover:text-r1 duration-200'>
+                            <Link onClick={()=>setOpen(false)} spy={true} smooth={true} offset={-100} duration={500} to="projects">Projects</Link>
+
+                        </li></a>
+                        <a href="/"><li className='hover:text-r1 duration-200'>
+                            <Link onClick={()=>setOpen(false)} spy={true} smooth={true} offset={-100} duration={500} to="event">Event</Link>
+                        </li></a>
+                        <a href="/"><li className='hover:text-r1 duration-200'>
+                            <Link onClick={()=>setOpen(false)} spy={true} smooth={true} offset={-100} duration={500} to="about">About</Link>
+                        </li></a>
+                        <a  href="/"><li className='hover:text-r1 duration-200'>
+                            <Link onClick={()=>setOpen(false)} spy={true} smooth={true} offset={-100} duration={500} to="contact">Contact</Link>
+                        </li></a>
                     </ul>
                     <div className='text-3xl text-white flex justify-center gap-10 mt-10'>
                         <span className='hover:text-r1 duration-200 cursor-pointer'> <ion-icon name="logo-facebook"></ion-icon></span>
