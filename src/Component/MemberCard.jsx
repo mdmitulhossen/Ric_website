@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import member1 from '../assets/team/Agnibho.png'
 import member2 from '../assets/team/Bridget.jpg'
 import member3 from '../assets/team/Fraser.png'
@@ -11,11 +11,16 @@ import member9 from '../assets/team/Fraser.png'
 import member10 from '../assets/team/Travis.png'
 import member11 from '../assets/team/Bridget.jpg'
 import member12 from '../assets/team/Kieran.png'
+import Aos from 'aos';
 
 const MemberCard = ({name,post,imageNo}) => {
-    const image = [member1,member2,member3,member4,member5,member6,member7,member8,member9,member10,member11,member12]
+    const image = [member1,member2,member3,member4,member5,member6,member7,member8,member9,member10,member11,member12];
+
+    useEffect(()=>{
+        Aos.init()
+      },[])
     return (
-        <div className='bg-white rounded-xl relative group cursor-pointer'>
+        <div data-aos="zoom-in" data-aos-duration="2000" className='bg-white rounded-xl relative group cursor-pointer'>
             <div className='w-full h-[350px]'>
                 <img className='w-full h-full rounded-t-xl object-fill' src={image[imageNo-1]} alt="" />
             </div>

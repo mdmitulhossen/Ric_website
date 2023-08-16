@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import event1 from "../assets/Events/Computer_vision.png"
+import Aos from 'aos';
+
 
 const Event = () => {
+   useEffect(()=>{
+     Aos.init()
+   },[])
     return (
-        <div className='RICcontainer mt-24'>
+        <div  data-aos="fade-down-right"
+
+        data-aos-duration="1500"
+             id='event' className='RICcontainer mt-24'>
             <h1 className='text-4xl text-r1 text-center font-bold mb-8'> Event Schedule</h1>
 
             <div className='rounded-xl bg-white'>
@@ -16,10 +24,10 @@ const Event = () => {
                     <p>Welcome to our first software oriented workshop of the year!</p>
                     <p>Computer vision is an ever-expanding topic in the field of robotics, and an important gateway to building more advanced and innovative technology. This workshop is a must if you are interested in robotics or software development, and want to get a headstart!</p>
                     <p>
-                    We will cover basic image processing, teaching you how to apply simple python algorithms to extract information from images.
+                        We will cover basic image processing, teaching you how to apply simple python algorithms to extract information from images.
                     </p>
                     <p>Tickets are $5, or free for members!</p>
-                    <button className='RICbtn'>Booking</button>
+                    <button  className='RICbtn'>Booking</button>
                 </div>
 
             </div>

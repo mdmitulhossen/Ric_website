@@ -1,14 +1,19 @@
-import React from 'react';
+import Aos from 'aos';
+import React, { useEffect } from 'react';
 
 const ContactPage = () => {
+    useEffect(() => {
+        Aos.init()
+    }, [])
     return (
-        <div className='mt-28 RICcontainer'>
+        <div id='contact' className='mt-28 RICcontainer'>
             <h1 className='text-4xl text-r1 text-center font-bold mb-12'> Contact Us</h1>
 
 
             <div className='bg-white grid md:grid-cols-2 p-8 md:p-12 gap-20 md:gap-12  rounded-xl'>
 
-                <div className=' space-y-4'>
+                <div data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" data-aos-duration="2500" className=' space-y-4'>
                     <h1 className='text-4xl  font-bold '>
                         <span className='mr-2'><ion-icon name="mail"></ion-icon></span>
                         Email Us
@@ -19,8 +24,8 @@ const ContactPage = () => {
 
                     <div className=''>
                         <form className='space-y-4'>
-                            <input className='w-full p-2 focus:ring-r2 rounded-md focus:border-r2' type="text" name="" id="" placeholder='Name..'/>
-                            <input className='w-full p-2 focus:ring-r2 rounded-md focus:border-r2' type="email" name="" id="" placeholder='Email..'/>
+                            <input className='w-full p-2 focus:ring-r2 rounded-md focus:border-r2' type="text" name="" id="" placeholder='Name..' />
+                            <input className='w-full p-2 focus:ring-r2 rounded-md focus:border-r2' type="email" name="" id="" placeholder='Email..' />
                             <select className='w-full p-2 focus:ring-r2 rounded-md focus:border-r2' name="" id="">
                                 <option value="" disabled>Topics</option>
                                 <option value="Memberships" selected>Memberships</option>
@@ -37,7 +42,8 @@ const ContactPage = () => {
 
 
 
-                <div className='flex flex-col gap-10 justify-between h-full'>
+                <div data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" data-aos-duration="2500" className='flex flex-col gap-10 justify-between h-full'>
                     <h1 className='text-4xl  font-bold '>
                         <span className='mr-2'><ion-icon name="location"></ion-icon></span>
                         Find Us
@@ -48,8 +54,8 @@ const ContactPage = () => {
                     </p>
                     <button className='bg-r2 px-5 py-2 rounded-md cursor-pointer text-white font-semibold hover:bg-r1 duration-200 '>Find us on Maps</button>
                     <div className=' h-[250px]'>
-                    <iframe className="gmap_iframe rounded-md h-full" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=350&amp;hl=en&amp;q=faridpur engineering college,bangladesh&amp;t=h&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-                       
+                        <iframe className="gmap_iframe rounded-md h-full" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=350&amp;hl=en&amp;q=faridpur engineering college,bangladesh&amp;t=h&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+
                     </div>
                 </div>
 

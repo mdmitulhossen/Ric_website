@@ -5,7 +5,7 @@ import MemberCard from '../Component/MemberCard';
 
 const Committee = () => {
     return (
-        <div className='mt-32 RICcontainer'>
+        <div id='about' className='mt-32 RICcontainer'>
              <h1 className='text-4xl text-r1 text-center font-bold '> Committee Members</h1>
              <p className='text-white/40 font-semibold text-center mb-8'>September 1, 2023</p>
 

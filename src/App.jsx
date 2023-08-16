@@ -5,7 +5,7 @@ import HomePage from './Pages/HomePage';
 
 const App = () => {
   return (
-    <div className='font-body'>
+    <div className='font-body scroll-smooth'>
       <HomePage/>
     </div>
   );

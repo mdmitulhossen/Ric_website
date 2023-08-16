@@ -1,8 +1,16 @@
-import React from 'react';
+import Aos from 'aos';
+import React, { useEffect } from 'react';
 
 const Becomemember = () => {
+    useEffect(()=>{
+        Aos.init()
+      },[])
     return (
-        <div className='RICcontainer pt-16'>
+        <div  data-aos="zoom-in-down"
+        // data-aos-offset="300"
+        // data-aos-easing="ease-in-sine"
+        data-aos-duration="1500"
+         className='RICcontainer pt-16'>
             <h1 className='text-4xl text-r1 text-center font-bold mb-8'>Become a Member</h1>
 
             <div className='bg-white rounded-xl w-full lg:px-20 md:px-12 px-10 py-10 grid md:grid-cols-2  md:gap-16 gap-10'>
