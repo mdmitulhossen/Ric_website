@@ -16,10 +16,10 @@ const Hero = () => {
                 <h2  data-aos="zoom-in-down" data-aos-duration="3000" className='md:text-[40px] text-4xl font-bold'>FEC</h2>
                 {/* <h1 className='md:text-[50px] text-5xl font-bold'><span className='bg-gradient-to-r from-r1 to-r2 text-transparent bg-clip-text'>Research</span> & Enovation Center</h1> */}
                 <h1  data-aos="zoom-in-down" data-aos-duration="3000" className='md:text-[50px] text-5xl font-bold'>
-                    Research &
+                    Research And <span> </span> 
                     <span className='bg-gradient-to-r from-r1 to-r2 text-transparent bg-clip-text'>
                         <ReactTyped
-                            strings={[' Enovation Center']}
+                            strings={[' Innovation Centre']}
                             typeSpeed={100}
                             backSpeed={80}
                             smartBackspace

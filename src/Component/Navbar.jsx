@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from "../assets/logo.svg"
+import logo from "../assets/logo4.png"
 import { Link } from 'react-scroll';
 import '../CSS/navbar.css'
 
@@ -12,7 +12,7 @@ const Navbar = () => {
                     {/* logo */}
                     <div className='flex gap-2 lg:col-span-3 col-span-6'>
                         <img className='w-10' src={logo} alt="" />
-                        <h1 className='text-3xl font-bold text-white'><span className='bg-gradient-to-r from-r1 to-r2 text-transparent bg-clip-text'>FEC</span> RIC </h1>
+                        <h1 className='text-3xl font-bold text-white'><span className='bg-gradient-to-r from-r1 to-r2 text-transparent bg-clip-text'>RIC</span> FEC </h1>
                     </div>
 
                     {/* nav items */}
@@ -23,14 +23,18 @@ const Navbar = () => {
                                     <Link spy={true} smooth={true} offset={-100} duration={500} to="hero">Home</Link>
                                 </li>
                             </a>
+                            <li className='hover:text-r1 duration-200 cursor-pointer'>
+                                <Link spy={true} smooth={true} offset={-100} duration={500} to="event">Event</Link>
+                            </li>
 
                             <li className='hover:text-r1 duration-200 cursor-pointer'>
                                 <Link spy={true} smooth={true} offset={-100} duration={500} to="projects">Projects</Link>
                             </li>
 
+{/* 
                             <li className='hover:text-r1 duration-200 cursor-pointer'>
-                                <Link spy={true} smooth={true} offset={-100} duration={500} to="event">Event</Link>
-                            </li>
+                                <Link spy={true} smooth={true} offset={-100} duration={500} to="">Papers</Link>
+                            </li> */}
                             <li className='hover:text-r1 duration-200 cursor-pointer'>
                                 <Link spy={true} smooth={true} offset={-100} duration={500} to="about">About</Link>
                             </li>
@@ -66,20 +70,20 @@ const Navbar = () => {
                 <div className={`p-5 absolute w-full bg-[#00233F] transition-all lg:hidden duration-500 left-0 ${open ? 'top-[50px]' : "top-[-999px]"}`}>
                     <ul className='flex flex-col w-full justify-center items-center gap-5 text-lg font-medium text-white'>
                         <a href="/"><li className='hover:text-r1 duration-200'>
-                            <Link onClick={()=>setOpen(false)} spy={true} smooth={true} offset={-100} duration={500} to="hero">Home</Link>
+                            <Link onClick={() => setOpen(false)} spy={true} smooth={true} offset={-100} duration={500} to="hero">Home</Link>
                         </li></a>
                         <a href="/"><li className='hover:text-r1 duration-200'>
-                            <Link onClick={()=>setOpen(false)} spy={true} smooth={true} offset={-100} duration={500} to="projects">Projects</Link>
+                            <Link onClick={() => setOpen(false)} spy={true} smooth={true} offset={-100} duration={500} to="projects">Projects</Link>
 
                         </li></a>
                         <a href="/"><li className='hover:text-r1 duration-200'>
-                            <Link onClick={()=>setOpen(false)} spy={true} smooth={true} offset={-100} duration={500} to="event">Event</Link>
+                            <Link onClick={() => setOpen(false)} spy={true} smooth={true} offset={-100} duration={500} to="event">Event</Link>
                         </li></a>
                         <a href="/"><li className='hover:text-r1 duration-200'>
-                            <Link onClick={()=>setOpen(false)} spy={true} smooth={true} offset={-100} duration={500} to="about">About</Link>
+                            <Link onClick={() => setOpen(false)} spy={true} smooth={true} offset={-100} duration={500} to="about">About</Link>
                         </li></a>
-                        <a  href="/"><li className='hover:text-r1 duration-200'>
-                            <Link onClick={()=>setOpen(false)} spy={true} smooth={true} offset={-100} duration={500} to="contact">Contact</Link>
+                        <a href="/"><li className='hover:text-r1 duration-200'>
+                            <Link onClick={() => setOpen(false)} spy={true} smooth={true} offset={-100} duration={500} to="contact">Contact</Link>
                         </li></a>
                     </ul>
                     <div className='text-3xl text-white flex justify-center gap-10 mt-10'>

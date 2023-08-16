@@ -49,8 +49,7 @@ const ContactPage = () => {
                         Find Us
                     </h1>
                     <p className='text-xl font-medium text-black/70'>
-                        Clough Engineering Lab,
-                        Crawley WA 6009
+                        Faridpur Engineering College
                     </p>
                     <button className='bg-r2 px-5 py-2 rounded-md cursor-pointer text-white font-semibold hover:bg-r1 duration-200 '>Find us on Maps</button>
                     <div className=' h-[250px]'>

@@ -8,9 +8,9 @@ const Event = () => {
      Aos.init()
    },[])
     return (
-        <div  data-aos="fade-down-right"
-
-        data-aos-duration="1500"
+        // data-aos="fade-right"
+        // // data-aos-duration="1500"
+        <div
              id='event' className='RICcontainer mt-24'>
             <h1 className='text-4xl text-r1 text-center font-bold mb-8'> Event Schedule</h1>
 

@@ -1,5 +1,5 @@
 .hero{
     background: url('../assets//compressed.gif') no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 100% 100%;
 }
