@@ -778,31 +778,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@keyframes typing {
-  0% {
-    width: 0%;
-    visibility: hidden;
-  }
-
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-
-  100% {
-    border-color: white;
-  }
-}
-
-.animate-typing {
-  animation: typing 2s steps(20) infinite alternate, blink .7s infinite;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
