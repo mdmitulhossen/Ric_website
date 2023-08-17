@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import img from "../assets/compressed.gif"
 import '../CSS/hero.css'
-import ReactTyped from 'react-typed';
+
 import Aos from 'aos';
 
 const Hero = () => {
@@ -31,14 +31,15 @@ const Hero = () => {
                     Research And <span> </span>
 
                     <span className='bg-gradient-to-r from-r1 to-r2 text-transparent bg-clip-text'>
-                        <ReactTyped
+                    Innovation Centre
+                        {/* <ReactTyped
                             strings={[
                                 'Innovation Centre',
                                ]}
                             typeSpeed={40}
                             backSpeed={50}
                             loop >
-                        </ReactTyped>
+                        </ReactTyped> */}
                     </span>
                 </h1>
 
