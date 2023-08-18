@@ -1,9 +1,11 @@
 import React from 'react';
 
+import Members from '../Component/Admin/Members';
+
 const AdminPage = () => {
     return (
         <div>
-            Welcome to admin
+            <Members/>
         </div>
     );
 };
