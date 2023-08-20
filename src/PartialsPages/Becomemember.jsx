@@ -30,7 +30,7 @@ const Becomemember = () => {
 
                 </div>
                 <div>
-                    <h2 className='text-3xl font-bold'>185</h2>
+                    <h2 className='text-3xl font-bold'>170+</h2>
                     <p className='text-sm font-medium'>Total members</p>
                     <p className='font-medium text-black/70 text-lg mt-2'>Join the Research & Enovation Club (RIC) for all the amazing projects, awesome workshops and cool events. You will even get an Altronics discount through us.</p>
                 </div>
