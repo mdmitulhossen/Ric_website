@@ -11,17 +11,17 @@ const Committee = () => {
 
              <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-10'>
                 <MemberCard name='Nabi' post='President' imageNo={1}/>
-                <MemberCard name='Nabi' post='President' imageNo={2}/>
-                <MemberCard name='Nabi' post='President' imageNo={3}/>
-                <MemberCard name='Nabi' post='President' imageNo={4}/>
-                <MemberCard name='Nabi' post='President' imageNo={5}/>
-                <MemberCard name='Nabi' post='President' imageNo={6}/>
-                <MemberCard name='Nabi' post='President' imageNo={7}/>
-                <MemberCard name='Nabi' post='President' imageNo={8}/>
-                <MemberCard name='Nabi' post='President' imageNo={9}/>
-                <MemberCard name='Nabi' post='President' imageNo={10}/>
-                <MemberCard name='Nabi' post='President' imageNo={11}/>
-                <MemberCard name='Nabi' post='President' imageNo={12}/>
+                <MemberCard name='Nabi' post='General Secratary' imageNo={2}/>
+                <MemberCard name='Nabi' post='Vice President' imageNo={3}/>
+                <MemberCard name='Nabi' post='Joint Secratary' imageNo={4}/>
+                <MemberCard name='Nabi' post='Organizer Secratary' imageNo={5}/>
+                <MemberCard name='Nabi' post='Joint Organizer Secatary' imageNo={6}/>
+                <MemberCard name='Nabi' post='Tresurer' imageNo={7}/>
+                <MemberCard name='Nabi' post='Joint Tresurer' imageNo={8}/>
+                <MemberCard name='Nabi' post='Office Secratary' imageNo={9}/>
+                <MemberCard name='Nabi' post='Joint Office Secratary' imageNo={10}/>
+                <MemberCard name='Nabi' post='Senior Executive' imageNo={11}/>
+                <MemberCard name='Nabi' post='Junior Executive' imageNo={12}/>
              </div>
         </div>
     );

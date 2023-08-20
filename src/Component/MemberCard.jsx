@@ -11,6 +11,7 @@ import member9 from '../assets/team/Fraser.png'
 import member10 from '../assets/team/Travis.png'
 import member11 from '../assets/team/Bridget.jpg'
 import member12 from '../assets/team/Kieran.png'
+import profile from '../assets/profile.webp'
 import Aos from 'aos';
 
 const MemberCard = ({name,post,imageNo}) => {
@@ -23,10 +24,10 @@ const MemberCard = ({name,post,imageNo}) => {
         <div  data-aos="fade-up"
         data-aos-easing="ease-out-cubic" data-aos-duration="1000" className='bg-white rounded-xl relative group cursor-pointer'>
             <div className='w-full h-[350px]'>
-                <img className='w-full h-full rounded-t-xl object-fill' src={image[imageNo-1]} alt="" />
+                <img className='w-full h-full rounded-t-xl object-fill' src={profile} alt="" />
             </div>
             <div className='p-4 text-center'>
-                <h1 className='text-xl font-bold'>{name}</h1>
+                <h1 className='text-xl font-bold'></h1>
                 <p className='bg-r1 text-xs py-1 inline-block px-8 text-white font-medium rounded-full '>{post}</p>
             </div>
 
