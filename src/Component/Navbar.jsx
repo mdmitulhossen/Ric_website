@@ -31,7 +31,7 @@ const Navbar = () => {
                                 <Link spy={true} smooth={true} offset={-100} duration={500} to="projects">Projects</Link>
                             </li>
 
-{/* 
+                            {/* 
                             <li className='hover:text-r1 duration-200 cursor-pointer'>
                                 <Link spy={true} smooth={true} offset={-100} duration={500} to="">Papers</Link>
                             </li> */}
@@ -51,7 +51,9 @@ const Navbar = () => {
 
                     {/* Social Icons */}
                     <div className='hidden lg:block col-span-2 space-x-4 justify-self-end text-3xl text-white'>
-                        <span className='hover:text-r1 duration-200 cursor-pointer'> <ion-icon name="logo-facebook"></ion-icon></span>
+                        <a href="https://www.facebook.com/groups/1448783418711645" target='_blank'>
+                            <span className='hover:text-r1 duration-200 cursor-pointer'> <ion-icon name="logo-facebook"></ion-icon></span>
+                        </a>
                         <span className='hover:text-r1 duration-200 cursor-pointer'><ion-icon name="logo-instagram"></ion-icon></span>
                         <span className='hover:text-r1 duration-200 cursor-pointer'><ion-icon name="logo-linkedin"></ion-icon></span>
                     </div>
